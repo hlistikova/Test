@@ -1,0 +1,171 @@
+@font-face{
+	font-family: "SF-Pro-Text"; 	
+	font-weight: 400;
+	font-style: normal;
+	src: url("fonts/SFUIText-Light.woff") format("woff");
+}
+
+:root {
+	--white: #FFFFFF;
+	--black: #000000;
+	--yellow_link: #FFDE01;
+	--yellow_data: #FFDD2D;
+;
+}
+.main-main{
+	width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.card{
+	width: 320px;
+	height: 512px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -50px;
+
+	position: relative;	
+}
+.card_cover{
+	background-image: url(img/bg_cover_card.png);
+}
+
+.card_first{
+	background-image: url(img/bg_first_card.png);
+}
+
+.card_second{
+	background-image: url(img/bg_second_card.png);
+}
+
+.card_third{
+	background-image: url(img/bg_third_card.png);
+}
+
+.card_fourth{
+	background-image: url(img/bg_fourth_card.png);
+}
+
+.card_fifth{
+	background-image: url(img/bg_fifth_card.png);
+}
+
+.card_sixth{
+	background-image: url(img/bg_sixth_card.png);
+}
+.title{
+	font-family: "Montserrat", Arial, sans-serif;
+	font-style: normal;
+	color: var(--white);
+	font-size: 24px;
+	line-height: 29px;
+	text-align: left;
+
+	margin: 40px 20px 20px;
+}
+
+.title_cover{
+	margin-top: 90px;
+	font-size: 26px;
+	line-height: 32px;	
+}
+
+.text{
+	font-family: "SF-Pro-Text", sans-serif;
+	color: var(--white);
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0 20px;
+}
+
+.text a{
+	color: var(--yellow_link);
+}
+
+.text_cover{
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.date{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+	left: 20px;
+	top: 50px;
+
+	width: 91px;
+	height: 25px;
+	background: var(--yellow_data);
+	border-radius: 24px;
+
+	font-family: "SF-Pro-Text", sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--black);
+
+	text-align: center;
+}
+
+.button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+
+	width: 280px;
+	height: 45px;
+	box-shadow: 0px 7px 35px rgba(0, 0, 0, 0.25);
+	border: none;
+	border-radius: 26px;
+	font-size: 15px;
+	line-height: 18px;
+
+	background-color: var(--white);
+}
+
+.button_send{
+	background-color: var(--yellow_link);
+}
+
+
+.question-form input{
+	width: 280px;
+	height: 61px;
+	background-color: var(--white);
+	opacity: 0.55;
+	border-radius: 12px;
+	box-sizing: border-box;
+	border-style: none;
+
+	padding: 0;
+
+	font-family: "SF-Pro-Text", sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--black);
+
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.question-form input::placeholder{
+	position: absolute;
+	top: 10px;
+	left: 13px;
+
+	font-family: "SF-Pro-Text", sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--black);
+}
