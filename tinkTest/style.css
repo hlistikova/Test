@@ -8,6 +8,7 @@
 :root {
 	--white: #FFFFFF;
 	--black: #000000;
+	--grey: #333333;
 	--yellow_link: #FFDE01;
 	--yellow_data: #FFDD2D;
 ;
@@ -147,14 +148,12 @@
 	background-color: var(--yellow_link);
 }
 
-
 .question-form input{
 	width: 280px;
 	height: 61px;
 	background-color: var(--white);
 	opacity: 0.55;
 	border-radius: 12px;
-	box-sizing: border-box;
 	border-style: none;
 
 	padding: 0;
@@ -162,19 +161,22 @@
 	font-family: "SF-Pro-Text", sans-serif;
 	font-size: 14px;
 	line-height: 17px;
-	color: var(--black);
+	color: var(--grey);
 
 	margin-left: 20px;
 	margin-right: 20px;
+
+	position: relative;
+	/*text-align: center;*/
 }
 
 .question-form input::placeholder{
 	position: absolute;
-	top: 10px;
-	left: 13px;
+	top: 12px;
+	left: 10px;
 
 	font-family: "SF-Pro-Text", sans-serif;
 	font-size: 14px;
 	line-height: 17px;
-	color: var(--black);
+	color: var(--grey);
 }
