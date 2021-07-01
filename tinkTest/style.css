@@ -12,7 +12,16 @@
 	--yellow_data: #FFDD2D;
 ;
 }
-.main-main{
+
+.page{
+	height: 100%;
+}
+
+.body_main{
+	margin: 0;
+}
+
+.main_main{
 	width: 1000px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
